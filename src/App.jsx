@@ -1,14 +1,18 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
+import React from 'react';
+import ParticleAnimation from './ParticleAnimation';
+import Header from './Header'; // Import the Header component
+import { useState } from 'react';
+import './App.css';
 
 function App() {
-  const [count, setCount] = useState(0)
+  const [count, setCount] = useState(0);
 
   return (
-    <div></div>
-  )
+    <div>
+      <Header /> {/* Include the Header component */}
+      <ParticleAnimation />
+    </div>
+  );
 }
 
-export default App
+export default App;

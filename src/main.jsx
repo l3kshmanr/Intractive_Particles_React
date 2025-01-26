@@ -1,11 +1,11 @@
 import React from 'react';
-import ReactDOM from 'react-dom';
+import ReactDOM from 'react-dom/client'; // Change this line
 import './index.css'; // Import Tailwind CSS
-import ParticleAnimation from './ParticleAnimation';
+import App from './App';
 
-ReactDOM.render(
-  <React.StrictMode>
-    <ParticleAnimation />
-  </React.StrictMode>,
-  document.getElementById('root')
+const root = ReactDOM.createRoot(document.getElementById('root')); // Use createRoot
+root.render(
+    <React.StrictMode>
+        <App />
+    </React.StrictMode>
 );
